@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Corazón Vibrante</title>
+</head>
+<body>
+    <div class="heart">
+        <p>En tus ojos encuentro mi cielo,
+mi amor, eterno y sin fin.
+Tu beso, un fuego que enciende mi alma,
+contigo, el mundo es jardín.
+Te amo con cada latido,
+en tu abrazo, hallo mi paz,
+juntos, el tiempo se detiene,
+por siempre, en tu corazón estaré.❤️✨</p>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.3.1/dist/confetti.browser.min.js"></script>
+
+<script>
+    setInterval(() => {
+        confetti({
+            particleCount: 100,
+            spread: 60,
+            origin: { x: 0.5, y: 0.5 }
+        });
+    }, 2000); 
+</script>
+<audio id="musica" loop>
+    <source src="music/TikVid.io_7486263465602993463.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+    document.addEventListener("click", function () {
+        document.getElementById("musica").play();
+    }, { once: true });
+</script>
+</audio>
+</body>
+</html>
